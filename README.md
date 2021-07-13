@@ -1,7 +1,7 @@
 # MicrosoftTeamsClone
  
-[Teams Clone](https://soggycake0312.herokuapp.com)  
-[Demo Video](https://youtu.be/Mqz3_tvrHCE)
+* [Teams Clone](https://soggycake0312.herokuapp.com)  
+* [Demo Video](https://youtu.be/Mqz3_tvrHCE)
 
 
 # Dependencies
