@@ -59,11 +59,12 @@ peer.on('call', function(call){  //when someone else calls you
 })
 
 // setTimeout(function(){
-    startfunc();
+    
 // }, 1000); 
 
 peer.on('open', ID => {
     myID = ID; 
+    startfunc();
 })
 
 const newUser = (userID, streams) => {  //to call new user
