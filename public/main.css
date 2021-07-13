@@ -1,0 +1,355 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+
+#video-grid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    overflow: auto;
+}
+
+video{
+    height: 300px;
+    width: 400px;
+    object-fit: cover;
+    padding: 8px;
+    background-color: transparent;
+}
+
+.normal{
+    height: 300px;
+    width: 400px;
+    object-fit: cover;
+    padding: 8px;
+    background-color: transparent;
+}
+
+.screen{
+    height: 630px;
+    width: 1120px;
+    object-fit: contain;
+    padding: 8px;
+    background-color: transparent;
+    display: none;
+    flex-direction: column;
+    flex: 1;
+    margin-top: 220px;
+}
+
+.main{
+    height: 100vh;
+    display: flex;
+}
+
+.main_left{
+    flex: 0.75;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.main_right{
+    flex: 0.25;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(80, 79, 79);
+}
+
+.main_chat{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(63, 63, 63);
+    max-height: 100%;
+}
+
+.main_users{
+    flex: 1;
+    display: none;
+    flex-direction: column;
+    background-color: rgb(63, 63, 63);
+    max-height: 100%;
+}
+
+.main_videos{
+    flex-grow: 1;
+    flex:1;
+    background-color: rgb(30 30 30);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+.main_controls{
+    display: flex;
+    background-color: #c5c2c2;
+    padding: 5px;
+    min-height: 56px;
+    justify-content: space-between;
+}
+
+.block{
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 1200px;
+}
+
+.button1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 12px;
+    min-width: 60px;
+    cursor: pointer;
+    font-size: large;
+}
+
+.fa-phone-slash{
+    color:red;
+}
+
+.vl{
+    border-left: 1.5px solid rgb(0, 0, 0);
+    height: 40px;
+    left: 50%;
+    margin-top: 1px;
+    margin-left: 0px;
+    top: 0;
+}
+
+.button1:hover{
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+
+.fa-microphone-slash {
+    color:red;
+}
+
+.fa-video-slash{
+    color:red;
+}
+
+.button1:hover{
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+
+.chat_header{
+    text-align: center;
+    padding-top: 10px;
+    font-size: larger;
+    color: darkgray;
+}
+
+.chat_window{
+    flex-grow: 1;
+    overflow-y: scroll;
+    padding-right: 5px;
+    word-wrap: break-word;
+}
+
+.users_window{
+    flex-grow: 1;
+    overflow-y: scroll;
+    padding-right: 5px;
+    word-wrap: break-word;
+}
+
+.chat_container{
+    display: flex;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-bottom: 14px;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-paper-plane{
+    font-size: larger;
+    cursor: pointer;
+    padding-left: 5px;
+    color: black;
+}
+
+.chat_container input{
+    flex-grow: 1;
+    background-color: transparent;
+    border: none;
+    color: #ffffff
+}
+
+hr{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+}
+
+.messages{
+    color: #ffffff;
+    list-style: none;
+    overflow-y: auto;
+    word-wrap: break-word;
+}
+
+.users_list{
+    color: #ffffff;
+    list-style: none;
+    overflow-y: auto;
+    word-wrap: break-word;
+}
+
+.chat_window::-webkit-scrollbar{
+    width: 8px;               /* width of the entire scrollbar */
+    padding-right: 3px;
+}
+  
+.chat_window::-webkit-scrollbar-track{
+    background: transparent;        /* color of the tracking area */
+    padding-right: 3px;
+}
+  
+.chat_window::-webkit-scrollbar-thumb{
+    background-color: rgba(0, 0, 0, 0.336);    /* color of the scroll thumb */
+    border-radius: 10px;       /* roundness of the scroll thumb */
+    border: 3px transparent;  /* creates padding around scroll thumb */
+    padding-right: 3px;
+}
+
+.users_window::-webkit-scrollbar{
+    width: 8px;               /* width of the entire scrollbar */
+    padding-right: 3px;
+}
+  
+.users_window::-webkit-scrollbar-track{
+    background: transparent;        /* color of the tracking area */
+    padding-right: 3px;
+}
+  
+.users_window::-webkit-scrollbar-thumb{
+    background-color: rgba(0, 0, 0, 0.336);    /* color of the scroll thumb */
+    border-radius: 10px;       /* roundness of the scroll thumb */
+    border: 3px transparent;  /* creates padding around scroll thumb */
+    padding-right: 3px;
+}
+
+.main_videos::-webkit-scrollbar{
+    width: 8px;               /* width of the entire scrollbar */
+    padding-right: 3px;
+}
+  
+.main_videos::-webkit-scrollbar-track{
+    background: transparent;        /* color of the tracking area */
+    padding-right: 3px;
+}
+  
+.main_videos::-webkit-scrollbar-thumb{
+    background-color: rgba(0, 0, 0, 0.336);    /* color of the scroll thumb */
+    border-radius: 10px;       /* roundness of the scroll thumb */
+    border: 3px transparent;  /* creates padding around scroll thumb */
+    padding-right: 3px;
+}
+
+.user_header{
+    text-align: center;
+    margin-top: 5%;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+}
+
+.user_title{
+    margin: auto;
+    margin-top: 6%;
+    width: 40%;
+    height: 350px;
+    border: 3px solid rgb(99, 99, 99);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(218, 218, 218);
+    padding-bottom: 20px;
+}
+
+.enter_username{
+    padding-top: 20px;
+    text-align: center;
+    font-size: x-large;
+}
+
+.user_buttons{
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    padding: 20px;
+}
+
+.button2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 22px;
+    min-width: 60px;
+    cursor: pointer;
+    font-size: large;
+    background-color: rgb(36, 130, 206);
+    border-radius: 5px;
+    min-width: 250px;
+}
+
+.user{
+    text-align: center;
+}
+
+.user_input{
+    margin-top: 20px;
+    align-items: center;
+    flex: 1;
+    text-align: center;
+    font-size: x-large;
+}
+
+.user_input input{
+    text-align: center;
+}
+
+.time{
+    font-size: small;
+    display: inline;
+}
+
+.vs1{
+    margin-top: 15px;
+}
+
+.vs2{
+    margin-top: 7px;
+}
+
+.joinedmessage{
+    text-align: center;
+}
+
+.leaveMeet{
+    display: none;
+    text-align: center;
+    margin-top: 10%;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+}
+
+.user_footer{
+    font-size: medium;
+}
